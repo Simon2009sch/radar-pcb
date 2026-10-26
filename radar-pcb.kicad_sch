@@ -860,136 +860,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "custom_sensors:HC-SR501_Breakout_JST"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PIR Breakout JST"
-				(at -6.858 0.254 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "HC-SR501_Breakout_JST_0_1"
-				(rectangle
-					(start -5.08 6.35)
-					(end 5.08 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "HC-SR501_Breakout_JST_1_1"
-				(pin power_in line
-					(at 0 8.89 270)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "Out"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "custom_sensors:LD2450_JST_Connector"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2462,10 +2332,6 @@
 		(uuid "a7c8e20f-e5b6-4a8a-8d3a-038635315e18")
 	)
 	(no_connect
-		(at 102.87 53.34)
-		(uuid "af3028bc-55d7-4e40-98c5-96c32ab8188f")
-	)
-	(no_connect
 		(at 133.35 78.74)
 		(uuid "b187cfb5-1210-4afb-93dd-a8e3ad519ff3")
 	)
@@ -2496,6 +2362,16 @@
 			(type default)
 		)
 		(uuid "4b44eeb9-2d03-44cf-aac1-77c530116321")
+	)
+	(wire
+		(pts
+			(xy 96.52 53.34) (xy 102.87 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ffb18a-14e7-47fe-91b0-d4ca0972978f")
 	)
 	(wire
 		(pts
@@ -2617,6 +2493,16 @@
 		)
 		(uuid "1184a436-6894-4bde-b80a-12a84358f5c7")
 	)
+	(label "gpio33"
+		(at 96.52 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1396f620-20a5-482d-ba04-ce35b62cc398")
+	)
 	(label "gpio13"
 		(at 96.52 71.12 0)
 		(effects
@@ -2628,7 +2514,7 @@
 		(uuid "15c05e03-df24-4b5d-a664-0fabf5a02437")
 	)
 	(label "gpio13"
-		(at 71.12 148.59 0)
+		(at 59.69 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2727,6 +2613,16 @@
 		)
 		(uuid "bd2c06c3-7dbe-4d53-8b79-f4e91bbf30b8")
 	)
+	(label "gpio33"
+		(at 59.69 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bebcdd3f-71c6-45c1-a6ce-dbf24a5135d1")
+	)
 	(label "TX"
 		(at 133.35 60.96 0)
 		(effects
@@ -2759,7 +2655,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 157.48 0)
+		(at 59.69 151.13 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2770,7 +2666,7 @@
 		(fields_autoplaced yes)
 		(uuid "015b16ad-c224-48cd-9235-58f244dc32c6")
 		(property "Reference" "#PWR012"
-			(at 63.5 163.83 0)
+			(at 66.04 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2781,17 +2677,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 162.56 0)
+			(at 63.5 151.1299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 157.48 0)
+			(at 59.69 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2802,7 +2699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 157.48 0)
+			(at 59.69 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2710,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 157.48 0)
+			(at 59.69 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3508,91 +3405,6 @@
 		)
 	)
 	(symbol
-		(lib_id "custom_sensors:HC-SR501_Breakout_JST")
-		(at 63.5 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "468eb20d-6084-4e08-b154-09a6e13b6cfc")
-		(property "Reference" "PIR1"
-			(at 57.15 147.3199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PIR Breakout JST"
-			(at 57.15 149.8599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 63.5 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2a049e47-1207-48a6-b8dc-eae8678635c3")
-		)
-		(pin "2"
-			(uuid "8de103f0-a029-435b-b20c-05084e67f09f")
-		)
-		(pin "3"
-			(uuid "d92377d9-89f3-4bd9-b4e9-6d7e51fe81f9")
-		)
-		(instances
-			(project "radar-pcb"
-				(path "/e45430bc-28d9-49a1-b74c-9fe9765214d7"
-					(reference "PIR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 63.5 110.49 0)
 		(unit 1)
@@ -4161,7 +3973,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 63.5 139.7 0)
+		(at 59.69 146.05 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4172,7 +3984,7 @@
 		(fields_autoplaced yes)
 		(uuid "c632e55b-42ab-434e-b726-12ba36dd2d81")
 		(property "Reference" "#PWR014"
-			(at 63.5 143.51 0)
+			(at 55.88 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4183,17 +3995,18 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 63.5 134.62 0)
+			(at 63.5 146.0499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 139.7 0)
+			(at 59.69 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4204,7 +4017,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 139.7 0)
+			(at 59.69 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4215,7 +4028,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 63.5 139.7 0)
+			(at 59.69 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4559,6 +4372,92 @@
 			(project "radar-pcb"
 				(path "/e45430bc-28d9-49a1-b74c-9fe9765214d7"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 54.61 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e40f024a-4f5a-41ae-a162-e30ca3b49b38")
+		(property "Reference" "PIR1"
+			(at 55.245 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 55.245 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(at 54.61 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 54.61 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "11620fcf-5610-4b86-b857-3fe702e546ca")
+		)
+		(pin "2"
+			(uuid "0f592ddd-15a0-4531-a9a9-6e2843042446")
+		)
+		(pin "1"
+			(uuid "8321d56d-14e0-4782-b6e5-38197e8431e2")
+		)
+		(pin "3"
+			(uuid "5e426121-a73c-4d50-8e44-221f4d0b854f")
+		)
+		(instances
+			(project "radar-pcb"
+				(path "/e45430bc-28d9-49a1-b74c-9fe9765214d7"
+					(reference "PIR1")
 					(unit 1)
 				)
 			)
